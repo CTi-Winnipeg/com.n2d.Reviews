@@ -1,0 +1,186 @@
+/* 'ALPHA' Webfont
+ * 100,200,300,400,600,800
+ * Normal and Italic
+ */
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_bold_italic-webfont.eot');
+    src: url('alpha_bold_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_bold_italic-webfont.woff2') format('woff2'),
+         url('alpha_bold_italic-webfont.woff') format('woff'),
+         url('alpha_bold_italic-webfont.ttf') format('truetype'),
+         url('alpha_bold_italic-webfont.svg#alphabold_italic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_black_italic-webfont.eot');
+    src: url('alpha_black_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_black_italic-webfont.woff2') format('woff2'),
+         url('alpha_black_italic-webfont.woff') format('woff'),
+         url('alpha_black_italic-webfont.ttf') format('truetype'),
+         url('alpha_black_italic-webfont.svg#alphablack_italic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_black-webfont.eot');
+    src: url('alpha_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_black-webfont.woff2') format('woff2'),
+         url('alpha_black-webfont.woff') format('woff'),
+         url('alpha_black-webfont.ttf') format('truetype'),
+         url('alpha_black-webfont.svg#alphablack') format('svg');
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_bold-webfont.eot');
+    src: url('alpha_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_bold-webfont.woff2') format('woff2'),
+         url('alpha_bold-webfont.woff') format('woff'),
+         url('alpha_bold-webfont.ttf') format('truetype'),
+         url('alpha_bold-webfont.svg#alphabold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_medium_italic-webfont.eot');
+    src: url('alpha_medium_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_medium_italic-webfont.woff2') format('woff2'),
+         url('alpha_medium_italic-webfont.woff') format('woff'),
+         url('alpha_medium_italic-webfont.ttf') format('truetype'),
+         url('alpha_medium_italic-webfont.svg#alphamedium_italic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_light-webfont.eot');
+    src: url('alpha_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_light-webfont.woff2') format('woff2'),
+         url('alpha_light-webfont.woff') format('woff'),
+         url('alpha_light-webfont.ttf') format('truetype'),
+         url('alpha_light-webfont.svg#alphalight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_medium-webfont.eot');
+    src: url('alpha_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_medium-webfont.woff2') format('woff2'),
+         url('alpha_medium-webfont.woff') format('woff'),
+         url('alpha_medium-webfont.ttf') format('truetype'),
+         url('alpha_medium-webfont.svg#alphamedium') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_light_italic-webfont.eot');
+    src: url('alpha_light_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_light_italic-webfont.woff2') format('woff2'),
+         url('alpha_light_italic-webfont.woff') format('woff'),
+         url('alpha_light_italic-webfont.ttf') format('truetype'),
+         url('alpha_light_italic-webfont.svg#alphalight_italic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_regular_italic-webfont.eot');
+    src: url('alpha_regular_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_regular_italic-webfont.woff2') format('woff2'),
+         url('alpha_regular_italic-webfont.woff') format('woff'),
+         url('alpha_regular_italic-webfont.ttf') format('truetype'),
+         url('alpha_regular_italic-webfont.svg#alpharegular_italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_thin-webfont.eot');
+    src: url('alpha_thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_thin-webfont.woff2') format('woff2'),
+         url('alpha_thin-webfont.woff') format('woff'),
+         url('alpha_thin-webfont.ttf') format('truetype'),
+         url('alpha_thin-webfont.svg#alphathin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_regular-webfont.eot');
+    src: url('alpha_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_regular-webfont.woff2') format('woff2'),
+         url('alpha_regular-webfont.woff') format('woff'),
+         url('alpha_regular-webfont.ttf') format('truetype'),
+         url('alpha_regular-webfont.svg#alpharegular') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'ALPHA';
+    src: url('alpha_thin_italic-webfont.eot');
+    src: url('alpha_thin_italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('alpha_thin_italic-webfont.woff2') format('woff2'),
+         url('alpha_thin_italic-webfont.woff') format('woff'),
+         url('alpha_thin_italic-webfont.ttf') format('truetype'),
+         url('alpha_thin_italic-webfont.svg#alphathin_italic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+
+}

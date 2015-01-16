@@ -1,0 +1,52 @@
+/* variables.less
+ */
+
+// COLOURS ================================
+  @globalBG : #000;
+  @appBG1 : #f0f0f0;
+  @appBG : #fff;
+  @modalBG : darken(@appBG,2%);
+  @actionSheetBG : rgba(0,0,0,0.85);
+
+  @mainColor : rgb(73,72,73);
+  @mainColorDark : darken(@mainColor,10%);
+  @mainColorMedium : lighten(@mainColor,20%);
+  @mainColorLight : lighten(@mainColor,40%);
+
+  @tintColor : rgb(74,144,226);
+  @tintColorDark : darken(@tintColor,20%);
+  @tintColorLight : lighten(@tintColor,20%);
+
+  @cancelColor : rgb(238,37,36);
+  @cancelColorDark : darken(@cancelColor,20%);
+  @cancelColorLight : lighten(@cancelColor,20%);
+
+  @successColor : rgb(53,226,143);
+  @successColorDark : darken(@successColor,20%);
+  @successColorLight : lighten(@successColor,20%);
+
+// TYPOGRAPHY =============================
+  @fontEmphasis : italic normal 300 1rem "ALPHA";
+  @fontBase : normal normal 300 1rem "ALPHA";
+  @fontBold : normal normal 600 1rem "ALPHA";
+  @fontSystem : normal normal normal 1rem "HelveticaNeue-Light","Roboto-Light";
+  @fontSystemSerif : normal normal normal 1rem "Times New Roman", "Times";
+
+// SIZES ==================================
+  @touchBase : 50px;
+  @navBase : @touchBase * 1.5;
+  @navBG : darken(@appBG,10%);
+
+// OTHER ==================================
+  @timingFunction : cubic-bezier(.11,1,.97,1);
+  @borderStandard : (@touchBase / @touchBase) solid;
+
+
+
+
+// MIXINS =================================
+
+  // ANIMATION CLASSES ========================
+    .animate(@d:300ms){
+      -webkit-transition: all @d @timingFunction;
+    }
