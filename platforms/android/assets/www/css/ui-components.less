@@ -1,0 +1,46 @@
+/* ui-components.less
+ */
+
+form {
+  fieldset {
+    -webkit-appearance: none;
+    border: none;
+    padding: 0; margin: 0;
+  }
+  input {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    font: @fontBase;
+    padding: 0.5em 0.75em;
+    border: none;
+    margin-bottom: 0.02em;
+    min-height: @touchBase;
+  }
+  button {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    font: @fontBase;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    min-height: @touchBase;
+    padding: 0.5em 0.75em;
+    border: none;
+    border-radius: 0.3em;
+    background-color: rgba(red(@mainColor),green(@mainColor),blue(@mainColor),0.65);
+    color: @appBG;
+  }
+  button:active {
+    opacity: 0.35;
+  }
+  button.action {
+    font: @fontBold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: rgba(red(@tintColor),green(@tintColor),blue(@tintColor),0.65);
+    color: @appBG;
+  }
+}

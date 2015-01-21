@@ -1,0 +1,90 @@
+/* base.less 
+ */
+
+* {
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  width: 100%; height: 100%;
+}
+
+body {
+  -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+  font: @fontBase;
+  font-size: 15px;
+  width:100%; height:100%;
+  margin:0px; padding:0px;
+  color: @appBG;
+  background-color: @globalBG;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPjxwYXRoIGQ9Ik0tMiAxMEwxMCAtMlpNMTAgNkw2IDEwWk0tMiAyTDIgLTIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI0LjciPjwvcGF0aD4KPC9zdmc+"),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIHN0b3AtY29sb3I9IiNFRTI1MjQiPjwvc3RvcD4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRjEyMTE1Ij48L3N0b3A+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiPjwvcmVjdD4KPC9zdmc+");
+  font-kerning: auto;
+}
+
+.app {
+  .animate(300ms);
+  position: fixed;
+  display: block;
+  top: 0px; left: 0px;
+  width: 100%; height: 100%;
+  overflow: hidden;
+//  background-color: @appBG;
+//  background-image:linear-gradient(top, @appBG1 0%, @appBG 51%);
+//  background-image:-webkit-linear-gradient(top, @appBG1 0%, @appBG 51%);
+//  background-image:-ms-linear-gradient(top, @appBG1 0%, @appBG 51%);
+//  background-image:-webkit-gradient(
+//    linear,
+//    left top,
+//    left bottom,
+//    color-stop(0, @appBG1),
+//    color-stop(0.51, @appBG)
+//    );
+//    background-attachment:fixed;
+  -webkit-transform-origin: 50% 100%;
+}
+.app.tilt {
+  -webkit-transform: perspective( 290vh ) rotateX( 15deg );
+  -webkit-filter: brightness(0.75);
+}
+
+
+
+
+// BASE CLASSES =============================
+  .noShadow {
+    box-shadow: none !important;
+  }
+  .bottom {
+    -webkit-transform: translateY(100%) !important;
+  }
+  .top {
+    bottom: 100% !important;
+  }
+  .hidden {
+    display: none !important;
+  }
+  .clear {
+    opacity: 0 !important;
+  }
+  .centered {
+    text-align: center;
+  }
+  .marginBig {
+    margin: 20%;
+  }
+  .marginSmall {
+    margin: 5%;
+  }
+  .paddingBig {
+    padding: 20%;
+  }
+  .paddingSmall {
+    padding: 5%;
+  }

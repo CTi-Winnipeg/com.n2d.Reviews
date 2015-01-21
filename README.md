@@ -7,6 +7,7 @@ This is a Cordova Phonegap app.  This will be updated with more info as the app 
   * org.apache.cordova.camera
   * org.apache.cordova.dialogs 
   * org.apache.cordova.vibration
+  * org.apache.cordova.statusbar
 * Other
   * https://github.com/wildabeast/BarcodeScanner/
 

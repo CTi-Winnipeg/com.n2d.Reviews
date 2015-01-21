@@ -15,10 +15,10 @@
     </feature>
     <name>CTi Reviews</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        CTi Winnipeg's Product Review App
     </description>
-    <author email="support@phonegap.com" href="http://phonegap.com">
-        PhoneGap Team
+    <author email="richard.bennett.cti@gmail.com" href="http://cti.io">
+        CTi Winnipeg - Richard Bennett
     </author>
     <content src="index.html" />
     <preference name="permissions" value="none" />
@@ -89,4 +89,8 @@
     <gap:splash gap:platform="ios" height="768" src="www/res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="www/res/screen/windows-phone/screen-portrait.jpg" />
     <access origin="*" />
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>

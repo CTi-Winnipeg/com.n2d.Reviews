@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>03E450E6-868B-4F21-A609-01905CDA7D94</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CTi Reviews</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>36840EBA302F74A9981AD4617C14378F8FD6C370</key>
+		<string>https://github.com/richard-bennett-cti/Royale.git</string>
+		<key>FA3E19EE21F5215998593D0A40B3377B4B4A09D7</key>
+		<string>https://github.com/richard-bennett-cti/com.n2d.Reviews.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/CTi Reviews.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>36840EBA302F74A9981AD4617C14378F8FD6C370</key>
+		<string>../../../../..</string>
+		<key>FA3E19EE21F5215998593D0A40B3377B4B4A09D7</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/richard-bennett-cti/com.n2d.Reviews.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FA3E19EE21F5215998593D0A40B3377B4B4A09D7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>36840EBA302F74A9981AD4617C14378F8FD6C370</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FA3E19EE21F5215998593D0A40B3377B4B4A09D7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>com.n2d.Reviews</string>
+		</dict>
+	</array>
+</dict>
+</plist>
