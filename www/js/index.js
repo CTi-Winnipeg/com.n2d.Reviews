@@ -293,6 +293,7 @@ var DashboardScreen = Parse.View.extend({
   selector: 'screen#dashboard',
   el: 'app',
   events: {
+    'click #btn_menu': 'showMenu',
     'click #btn_logout': 'doLogout',
     'mousedown .touchable': 'touched',
     'mouseup .touchable': 'released',
@@ -316,6 +317,13 @@ var DashboardScreen = Parse.View.extend({
       // ...tell the app to make it visible
       this.$el.html( tpl() );
     }
+  },
+  showMenu: function () {
+    'use strict';
+    $('app').addClass('deepTilt');
+    $('app').one('click', function () {
+      $('app').removeClass('deepTilt');
+    });
   },
   doLogout: function () {
     app.exit();

@@ -1,8 +1,29 @@
 // main: main.less
 
 /* nav.less
- * 
+ * Global navigation and Menu styles
  */
+
+menu {
+  position: fixed;
+  display: block;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  padding: 0; margin: 0;
+  icon {
+    display: block;
+    margin: 1em auto;
+    width: (@touchBase * 1.5);
+    height: (@touchBase * 1.5);
+    img {
+      border: 0.12em solid @appBG;
+      border-radius: @touchBase;
+      max-width: (@touchBase * 1.5);
+      height: auto;
+    }
+  }
+}
 
 nav.top {
   position: absolute;

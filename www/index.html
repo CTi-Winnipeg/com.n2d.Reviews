@@ -15,6 +15,20 @@
   </head>
   <body>
    
+   
+    <!-- OFF-CANVAS-MENU_CONTAINER -->
+    <menu>
+      <icon id="btn_logOut" class="touchable">
+        <img src="img/ico_modal_exit-512.svg" alt="">
+      </icon>
+      <icon id="btn_contactUs" class="touchable">
+        <img src="img/ico_modal_mail-512.svg" alt="">
+      </icon>
+      <icon id="btn_closeMenu" class="touchable">
+        <img src="img/ico_modal_cancel-512.svg" alt="">
+      </icon>
+    </menu>
+   
     <!-- APP_CONTAINER -->
     <app></app>
     
@@ -22,6 +36,9 @@
     <!-- //START_UNDERSCORE_TEMPLATES -->
     
       <script id="tpl_" type="text/template"></script>
+      <script id="tpl_menu" type="text/template">
+        
+      </script>
       <script id="tpl_view_start" type="text/template">
         <screen id="start" class="hidden">
           <content>
@@ -96,7 +113,7 @@
         <screen id="dashboard" class="">
           <nav class="top">
             <left>
-              <icon>
+              <icon id="btn_menu">
                 <img src="img/ico_nav_menu-512.svg">
               </icon>
             </left>
