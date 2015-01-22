@@ -94,9 +94,19 @@
       </script>
       <script id="tpl_view_dashboard" type="text/template">
         <screen id="dashboard" class="">
+          <nav class="top">
+            <left>
+              <icon>
+                <img src="img/ico_nav_menu-512.svg">
+              </icon>
+            </left>
+            <right>
+              <title><%= Parse.User.current().get('firstName') %>'s Dashboard</title>
+            </right>
+          </nav>
           <content>
             <img id="logo" src="img/cti_logo.svg" alt="">
-            <p><%= Parse.User.current().get('firstName') %>'s Dashboard</p>
+            <p></p>
             <form id="frm_dashboard_logout">
               <button id="btn_logout" type="reset" class="cancel">Logout</button>
             </form>

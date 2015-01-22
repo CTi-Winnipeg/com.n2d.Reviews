@@ -4,3 +4,36 @@
  * 
  */
 
+nav.top {
+  position: absolute;
+  top: -1em; left: -1em; right: -1em;
+  height: (@touchBase * 1.5);
+  line-height: (@touchBase * 1.5);
+  // flexbox fun
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  
+  left, right {
+    height: (@touchBase * 1.5);
+  }
+  
+  left {
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
+    display: block;
+    icon {
+      img {
+        
+      }
+    }
+  }
+  
+  right {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    display: block;
+  }
+  
+}
