@@ -32,7 +32,7 @@ body {
   font-kerning: auto;
 }
 
-.app {
+app {
   .animate(300ms);
   position: fixed;
   display: block;
@@ -53,9 +53,13 @@ body {
 //    background-attachment:fixed;
   -webkit-transform-origin: 50% 100%;
 }
-.app.tilt {
+app.tilt {
   -webkit-transform: perspective( 290vh ) rotateX( 15deg );
   -webkit-filter: brightness(0.75);
+}
+app.deepTilt {
+  -webkit-transform: perspective( 290vh ) rotateX( 45deg );
+  -webkit-filter: brightness(0.35);
 }
 
 

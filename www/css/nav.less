@@ -6,7 +6,7 @@
 
 nav.top {
   position: absolute;
-  top: -1em; left: -1em; right: -1em;
+  top: 0; left: 0; right: 0;
   height: (@touchBase * 1.5);
   line-height: (@touchBase * 1.5);
   // flexbox fun
@@ -24,8 +24,12 @@ nav.top {
     flex: 0 1 auto;
     display: block;
     icon {
+      display: block;
+      width: (@touchBase * 1.5);
+      height: (@touchBase * 1.5);
       img {
-        
+        max-width: (@touchBase * 1.5);
+        height: auto;
       }
     }
   }
@@ -34,6 +38,17 @@ nav.top {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
     display: block;
+    line-height: (@touchBase * 1.5);
+    title {
+      display: block;
+      height: (@touchBase * 1.5);
+      line-height: (@touchBase * 1.5);
+      padding-right: ((@touchBase * 1.5) / 3);
+      font: @fontBold;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      text-align: right;
+    }
   }
   
 }
