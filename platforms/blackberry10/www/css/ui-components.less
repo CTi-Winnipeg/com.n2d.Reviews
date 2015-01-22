@@ -1,0 +1,134 @@
+/* ui-components.less
+ */
+
+form {
+  fieldset {
+    -webkit-appearance: none;
+    border: none;
+    padding: 0; margin: 0;
+    header {
+      font: @fontSerifBold;
+      font-size: 1.1em;
+      letter-spacing: 0.1em;
+      text-transform: lowercase;
+      color: @mainColor;
+      subheader {
+        display: block;
+        font: @fontSerif;
+        font-size: 0.8em;
+        letter-spacing: 0.09em;
+        text-transform: lowercase;
+        opacity: 0.35;
+      }
+    }
+    button {
+      margin-bottom: 1em;
+    }
+    button:last-child {
+      margin-bottom: 0;
+    }
+    input:last-child {
+      margin-bottom: 1em;
+    }
+  }
+  
+  
+  // INPUT & SELECT
+  
+  input, select {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    font: @fontBase;
+    padding: 0.5em 0.75em;
+    border: none;
+    border-radius: 0.3em;
+    margin-bottom: 0.02em;
+    min-height: @touchBase;
+    color: @tintColor;
+  }
+  input {
+    -webkit-user-select: text;
+  }
+  input.postalCode {
+    text-transform: uppercase !important;
+  }
+  select {
+    background-color: @appBG;
+  }
+  label.select_wrapper {
+    display: block;
+    position: relative;
+  }
+  label.select_wrapper::after {
+    font-family: 'ctireviewsico';
+    content: '\e82d';
+    position: absolute;
+    right: 0.5em;
+    top: 0px;
+    width: @touchBase;
+    height: @touchBase;
+    line-height: @touchBase;
+    text-align: right;
+    opacity: 0.65;
+    color: @tintColor;
+  }
+  input.good {
+    color: @successColor;
+  }
+  input.bad {
+    color: @cancelColor;
+  }
+  
+  
+  // BUTTONS
+  
+  button {
+    -webkit-appearance: none;
+    display: block;
+    width: 100%;
+    font: @fontBase;
+    font-size: 0.8em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    min-height: @touchBase;
+    padding: 0.5em 0.75em;
+    //border: 0.05em solid @mainColorMedium;
+    border: none;
+    border-radius: 0.3em;
+    //background-color: rgba(red(@mainColor),green(@mainColor),blue(@mainColor),0.65);
+    background: darken(@appBG,3.5%);
+    color: @mainColorMedium;
+  }
+  button::active, button::focus {
+    opacity: 0.35;
+  }
+  button:disabled{
+    opacity: 0.35;
+  }
+  button.action {
+    font: @fontBold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: rgba(red(@tintColor),green(@tintColor),blue(@tintColor),0.65);
+    color: @appBG;
+  }
+  button.success {
+    font: @fontBold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: rgba(red(@successColor),green(@successColor),blue(@successColor),0.85);
+    color: @appBG;
+  }
+  button.error {
+    font: @fontBold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: rgba(red(@cancelColor),green(@cancelColor),blue(@cancelColor),0.85);
+    color: @appBG;
+  }
+}

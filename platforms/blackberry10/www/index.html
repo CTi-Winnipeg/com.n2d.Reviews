@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <!--<link rel="stylesheet" type="text/css" href="css/font/alpha/stylesheet.css" />-->
+    <link rel="stylesheet" type="text/css" href="css/font/sanfran/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/freight-big-pro.css" />
+    <link rel="stylesheet" type="text/css" href="css/font/ctireviewsico/ctireviewsico.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <title>CTi Reviews</title>
+  </head>
+  <body>
+   
+    <!-- APP_CONTAINER -->
+    <app></app>
+    
+    
+    <!-- //START_UNDERSCORE_TEMPLATES -->
+    
+      <script id="tpl_" type="text/template"></script>
+      <script id="tpl_view_start" type="text/template">
+        <screen id="start" class="hidden">
+          <content>
+            <img id="logo" src="img/cti_logo.svg" alt="">
+            <form id="frm_start" action="">
+              <fieldset>
+                <button id="btn_currentUser" type="button" class="touchable">Existing user?</button>
+                <button id="btn_newUser" type="button" class="touchable">New here?</button>
+              </fieldset>
+            </form>
+          </content>
+        </screen>
+      </script>
+      <script id="tpl_view_login" type="text/template">
+        <screen id="login" class="hidden">
+          <content>
+            <img id="logo" src="img/cti_logo.svg" alt="">
+            <header class="hidden">Login to MyCT</header>
+            <form id="frm_login" action="">
+              <fieldset>
+                <input id="txt_username" type="text" placeholder="username">
+                <input id="txt_password" type="password" placeholder="password">
+              </fieldset>
+              <button id="btn_login" type="reset" class="action">Sign in</button>
+            </form>
+          </content>
+        </screen>
+      </script>
+      <script id="tpl_view_signup" type="text/template">
+        <screen id="signup" class="hidden">
+          <nav class="top"></nav>
+          <content>
+            <img id="logo" src="img/cti_logo.svg" alt="">
+            <form id="frm_signup" action="">
+              <fieldset>
+                <header>
+                  About you
+                  <subheader>all fields here are optional</subheader>
+                </header>
+                <input id="txt_firstName" type="text" placeholder="First name" autocapitalize="on">
+                <input id="txt_lastName" type="text" placeholder="Last name" autocapitalize="on">
+                <input id="dte_dob" type="date" placeholder="Birth date">
+                <label class="select_wrapper" for="sel_gender">
+                <select id="sel_gender">
+                  <option value="0">Select your gender</option>
+                  <option value="1">Female</option>
+                  <option value="2">Male</option>
+                  <optgroup label="Opt out">
+                    <option value="3">Prefer not to say</option>
+                  </optgroup>
+                </select>
+                </label>
+                <input id="txt_postalCode" type="text" class="postalCode" placeholder="A9A 9A9" maxlength="7">
+              </fieldset>
+              <fieldset>
+                <header>
+                  Account details
+                  <subheader>all fields required</subheader>
+                </header>
+                <input id="txt_username" type="text" placeholder="Username" required autocorrect="off" autocapitalize="off" spellcheck="false">
+                <input id="txt_email" type="text" placeholder="you@email.net" required>
+                <input id="txt_pass1" type="password" placeholder="password" required>
+                <input id="txt_pass2" type="password" placeholder="confirm password" required>
+                <button id="btn_signup" type="submit" class="action" disabled>Sign up</button>
+              </fieldset>
+              <button id="btn_cancel" type="reset" class="">Cancel</button>
+            </form>
+          </content>
+        </screen>
+      </script>
+      <script id="tpl_view_dashboard" type="text/template">
+        <screen id="dashboard" class="">
+          <content>
+            <img id="logo" src="img/cti_logo.svg" alt="">
+            <p><%= Parse.User.current().get('firstName') %>'s Dashboard</p>
+            <form id="frm_dashboard_logout">
+              <button id="btn_logout" type="reset" class="cancel">Logout</button>
+            </form>
+          </content>
+        </screen>
+      </script>
+    
+    <!-- END_UNDERSCORE_TEMPLATES// -->
+    
+    
+    <script type="text/javascript" src="cordova.js"></script>
+    
+    <!-- Additional libraries -->
+    <script src="js/lib/underscore-min.js"></script>
+    <script src="js/lib/backbone-min.js"></script>
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/hammer.min.js"></script>
+    <script src="js/lib/jquery.hammer.js"></script>
+    <script src="js/lib/jquery-barcode.min.js"></script>
+    <script src="js/lib/parse-1.3.3.min.js"></script>
+    <script src="js/lib/moment.min.js"></script>
+    
+    <script type="text/javascript" src="js/index.js"></script>
+    
+    <script type="text/javascript">
+      //init app
+      app.initialize();
+    </script>
+    
+    
+  </body>
+</html>

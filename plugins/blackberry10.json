@@ -1,0 +1,59 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "www/config.xml": {
+                "parents": {
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"Camera\" value=\"Camera\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Notification\" value=\"Notification\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Vibration\" value=\"Vibration\" />",
+                            "count": 1
+                        }
+                    ],
+                    "/widget/rim:permissions": [
+                        {
+                            "xml": "<rim:permit>access_shared</rim:permit>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<rim:permit>use_camera</rim:permit>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.phonegap.plugins.barcodescanner": {
+            "PACKAGE_NAME": "com.n2d.reviews"
+        },
+        "org.apache.cordova.camera": {
+            "PACKAGE_NAME": "com.n2d.reviews"
+        },
+        "org.apache.cordova.console": {
+            "PACKAGE_NAME": "com.n2d.reviews"
+        },
+        "org.apache.cordova.dialogs": {
+            "PACKAGE_NAME": "com.n2d.reviews"
+        },
+        "org.apache.cordova.statusbar": {
+            "PACKAGE_NAME": "com.n2d.reviews"
+        },
+        "org.apache.cordova.vibration": {
+            "PACKAGE_NAME": "com.n2d.reviews"
+        }
+    },
+    "dependent_plugins": {}
+}
