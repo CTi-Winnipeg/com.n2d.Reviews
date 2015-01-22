@@ -14,6 +14,7 @@ nav.top {
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
+  background-color: @appBG;
   
   left, right {
     height: (@touchBase * 1.5);
@@ -37,14 +38,15 @@ nav.top {
   right {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
-    line-height: (@touchBase * 1.5);
+    line-height: ((@touchBase * 1.5) / 3);
+    padding: ((@touchBase * 1.5) / 3);
     title {
       display: block;
-      height: (@touchBase * 1.5);
-      line-height: (@touchBase * 1.5);
-      padding-right: ((@touchBase * 1.5) / 3);
       font: @fontBold;
       font-size: 0.85em;
+      height: ((@touchBase * 1.5) / 3);
+      line-height: ((@touchBase * 1.5) / 3);
+      //padding: ((@touchBase * 1.5) / 3);
       text-transform: uppercase;
       text-align: right;
     }
