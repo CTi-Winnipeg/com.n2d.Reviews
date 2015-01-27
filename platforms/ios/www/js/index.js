@@ -293,7 +293,7 @@ var DashboardScreen = Parse.View.extend({
   selector: 'screen#dashboard',
   el: 'app',
   events: {
-    'click #btn_logout': 'doLogout',
+    'click #btn_menu': 'showMenu',
     'mousedown .touchable': 'touched',
     'mouseup .touchable': 'released',
     'touchstart .touchable': 'touched',
@@ -317,8 +317,12 @@ var DashboardScreen = Parse.View.extend({
       this.$el.html( tpl() );
     }
   },
-  doLogout: function () {
-    app.exit();
+  showMenu: function () {
+    'use strict';
+    $('app').addClass('deepTilt');
+    $('app').one('click', function () {
+      $('app').removeClass('deepTilt');
+    });
   },
   touched: function (event) {
     $(event.target).addClass('touched');
@@ -346,6 +350,12 @@ var app = {
     document.addEventListener('deviceready', this.onDeviceReady, false);
     document.addEventListener('online', this.onOnline, false);
     document.addEventListener('offline', this.onOffline, false);
+    
+    // main menu events
+    $('menu #btn_logOut').hammer().on('tap', app.exit);
+    $('menu #btn_closeMenu').hammer().on('tap', function () {
+      $('app').removeClass('deepTilt');
+    });
   },
   onDeviceReady: function () {
     'use strict';

@@ -84,6 +84,7 @@ var LoginScreen = Parse.View.extend({
   el: 'app',
   events: {
     'click #btn_login': 'doLogin',
+    'click #btn_cancel': 'goBack',
     'mousedown .touchable': 'touched',
     'mouseup .touchable': 'released',
     'touchstart .touchable': 'touched',
@@ -150,6 +151,9 @@ var LoginScreen = Parse.View.extend({
         console.error(error);
       }
     });
+  },
+  goBack: function () {
+    app.showScreen('start');
   },
   touched: function (event) {
     $(event.target).addClass('touched');
@@ -294,7 +298,6 @@ var DashboardScreen = Parse.View.extend({
   el: 'app',
   events: {
     'click #btn_menu': 'showMenu',
-    'click #btn_logout': 'doLogout',
     'mousedown .touchable': 'touched',
     'mouseup .touchable': 'released',
     'touchstart .touchable': 'touched',
@@ -325,9 +328,6 @@ var DashboardScreen = Parse.View.extend({
       $('app').removeClass('deepTilt');
     });
   },
-  doLogout: function () {
-    app.exit();
-  },
   touched: function (event) {
     $(event.target).addClass('touched');
   },
@@ -354,6 +354,12 @@ var app = {
     document.addEventListener('deviceready', this.onDeviceReady, false);
     document.addEventListener('online', this.onOnline, false);
     document.addEventListener('offline', this.onOffline, false);
+    
+    // main menu events
+    $('menu #btn_logOut').hammer().on('tap', app.exit);
+    $('menu #btn_closeMenu').hammer().on('tap', function () {
+      $('app').removeClass('deepTilt');
+    });
   },
   onDeviceReady: function () {
     'use strict';

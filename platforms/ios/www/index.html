@@ -15,6 +15,20 @@
   </head>
   <body>
    
+   
+    <!-- OFF-CANVAS-MENU_CONTAINER -->
+    <menu>
+      <icon id="btn_logOut" class="touchable">
+        <img src="img/ico_modal_exit-512.svg" alt="">
+      </icon>
+      <icon id="btn_contactUs" class="touchable">
+        <img src="img/ico_modal_mail-512.svg" alt="">
+      </icon>
+      <icon id="btn_closeMenu" class="touchable">
+        <img src="img/ico_modal_cancel-512.svg" alt="">
+      </icon>
+    </menu>
+   
     <!-- APP_CONTAINER -->
     <app></app>
     
@@ -22,84 +36,128 @@
     <!-- //START_UNDERSCORE_TEMPLATES -->
     
       <script id="tpl_" type="text/template"></script>
+      <script id="tpl_menu" type="text/template">
+        
+      </script>
       <script id="tpl_view_start" type="text/template">
         <screen id="start" class="hidden">
           <content>
-            <img id="logo" src="img/cti_logo.svg" alt="">
-            <form id="frm_start" action="">
-              <fieldset>
-                <button id="btn_currentUser" type="button" class="touchable">Existing user?</button>
-                <button id="btn_newUser" type="button" class="touchable">New here?</button>
-              </fieldset>
-            </form>
+            <flex>
+              <item>
+                <img id="logo" src="img/cti_logo.svg" alt="">
+                <form id="frm_start" action="">
+                  <fieldset>
+                    <button id="btn_currentUser" type="button" class="touchable">Existing user?</button>
+                    <button id="btn_newUser" type="button" class="touchable">New here?</button>
+                  </fieldset>
+                </form>
+              </item>
+            </flex>
           </content>
         </screen>
       </script>
       <script id="tpl_view_login" type="text/template">
         <screen id="login" class="hidden">
           <content>
-            <img id="logo" src="img/cti_logo.svg" alt="">
-            <header class="hidden">Login to MyCT</header>
-            <form id="frm_login" action="">
-              <fieldset>
-                <input id="txt_username" type="text" placeholder="username">
-                <input id="txt_password" type="password" placeholder="password">
-              </fieldset>
-              <button id="btn_login" type="reset" class="action">Sign in</button>
-            </form>
+            <flex>
+              <item>
+                <img id="logo" src="img/cti_logo.svg" alt="">
+                <header class="hidden">Login to MyCT</header>
+                <form id="frm_login" action="">
+                  <fieldset>
+                    <input id="txt_username" type="text" placeholder="username">
+                    <input id="txt_password" type="password" placeholder="password">
+                  </fieldset>
+                  <button id="btn_login" type="reset" class="action">Sign in</button>
+                </form>
+              </item>
+            </flex>
           </content>
         </screen>
       </script>
       <script id="tpl_view_signup" type="text/template">
         <screen id="signup" class="hidden">
-          <nav class="top"></nav>
           <content>
-            <img id="logo" src="img/cti_logo.svg" alt="">
-            <form id="frm_signup" action="">
-              <fieldset>
-                <header>
-                  About you
-                  <subheader>all fields here are optional</subheader>
-                </header>
-                <input id="txt_firstName" type="text" placeholder="First name" autocapitalize="on">
-                <input id="txt_lastName" type="text" placeholder="Last name" autocapitalize="on">
-                <input id="dte_dob" type="date" placeholder="Birth date">
-                <label class="select_wrapper" for="sel_gender">
-                <select id="sel_gender">
-                  <option value="0">Select your gender</option>
-                  <option value="1">Female</option>
-                  <option value="2">Male</option>
-                  <optgroup label="Opt out">
-                    <option value="3">Prefer not to say</option>
-                  </optgroup>
-                </select>
-                </label>
-                <input id="txt_postalCode" type="text" class="postalCode" placeholder="A9A 9A9" maxlength="7">
-              </fieldset>
-              <fieldset>
-                <header>
-                  Account details
-                  <subheader>all fields required</subheader>
-                </header>
-                <input id="txt_username" type="text" placeholder="Username" required autocorrect="off" autocapitalize="off" spellcheck="false">
-                <input id="txt_email" type="text" placeholder="you@email.net" required>
-                <input id="txt_pass1" type="password" placeholder="password" required>
-                <input id="txt_pass2" type="password" placeholder="confirm password" required>
-                <button id="btn_signup" type="submit" class="action" disabled>Sign up</button>
-              </fieldset>
-              <button id="btn_cancel" type="reset" class="">Cancel</button>
-            </form>
+            <flex>
+              <item>
+                <img id="logo" src="img/cti_logo.svg" alt="">
+                <form id="frm_signup" action="">
+                  <fieldset>
+                    <header>
+                      About you
+                      <subheader>all fields here are optional</subheader>
+                    </header>
+                    <input id="txt_firstName" type="text" placeholder="First name" autocapitalize="on">
+                    <input id="txt_lastName" type="text" placeholder="Last name" autocapitalize="on">
+                    <input id="dte_dob" type="date" placeholder="Birth date">
+                    <label class="select_wrapper" for="sel_gender">
+                    <select id="sel_gender">
+                      <option value="0">Select your gender</option>
+                      <option value="1">Female</option>
+                      <option value="2">Male</option>
+                      <optgroup label="Opt out">
+                        <option value="3">Prefer not to say</option>
+                      </optgroup>
+                    </select>
+                    </label>
+                    <input id="txt_postalCode" type="text" class="postalCode" placeholder="A9A 9A9" maxlength="7">
+                  </fieldset>
+                  <fieldset>
+                    <header>
+                      Account details
+                      <subheader>all fields required</subheader>
+                    </header>
+                    <input id="txt_username" type="text" placeholder="Username" required autocorrect="off" autocapitalize="off" spellcheck="false">
+                    <input id="txt_email" type="text" placeholder="you@email.net" required>
+                    <input id="txt_pass1" type="password" placeholder="password" required>
+                    <input id="txt_pass2" type="password" placeholder="confirm password" required>
+                    <button id="btn_signup" type="submit" class="action" disabled>Sign up</button>
+                  </fieldset>
+                  <button id="btn_cancel" type="reset" class="">Cancel</button>
+                </form>
+              </item>
+            </flex>
           </content>
         </screen>
       </script>
       <script id="tpl_view_dashboard" type="text/template">
         <screen id="dashboard" class="">
+          <nav class="top">
+            <left>
+              <icon id="btn_menu">
+                <img src="img/ico_nav_menu-512.svg">
+              </icon>
+            </left>
+            <right>
+              <title><%= Parse.User.current().get('firstName') %>'s Dashboard</title>
+            </right>
+          </nav>
           <content>
-            <img id="logo" src="img/cti_logo.svg" alt="">
-            <p><%= Parse.User.current().get('firstName') %>'s Dashboard</p>
-            <form id="frm_dashboard_logout">
-              <button id="btn_logout" type="reset" class="cancel">Logout</button>
-            </form>
+            <flex>
+              <item>
+                <count>12</count>
+                <label>Reviews</label>
+              </item>
+              <item>
+                <count>16</count>
+                <label>Recent products</label>
+              </item>
+              <item>
+                <count>3</count>
+                <label>Surveys left</label>
+              </item>
+              <item>
+                <count>4</count>
+                <label>Cool experiments</label>
+              </item>
+              <item>
+                <count>3</count>
+                <label>Badges remaining</label>
+              </item>
+            </flex>
+            <footer>
+              Stuff
+            </footer>
           </content>
         </screen>
       </script>

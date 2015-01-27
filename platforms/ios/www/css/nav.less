@@ -1,3 +1,77 @@
+// main: main.less
+
 /* nav.less
+ * Global navigation and Menu styles
  */
 
+menu {
+  position: fixed;
+  display: block;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  padding: 0; margin: 0;
+  icon {
+    display: block;
+    margin: 1em auto;
+    width: (@touchBase * 1.5);
+    height: (@touchBase * 1.5);
+    img {
+      border: 0.12em solid @appBG;
+      border-radius: @touchBase;
+      max-width: (@touchBase * 1.5);
+      height: auto;
+    }
+  }
+}
+
+nav.top {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: (@touchBase * 1.5);
+  line-height: (@touchBase * 1.5);
+  // flexbox fun
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  background-color: @appBG;
+  z-index: 10;
+  
+  left, right {
+    height: (@touchBase * 1.5);
+    display: block;
+  }
+  
+  left {
+    -webkit-flex: 0 1 auto;
+    flex: 0 1 auto;
+    icon {
+      display: block;
+      width: (@touchBase * 1.5);
+      height: (@touchBase * 1.5);
+      img {
+        max-width: (@touchBase * 1.5);
+        height: auto;
+      }
+    }
+  }
+  
+  right {
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+    line-height: ((@touchBase * 1.5) / 3);
+    padding: ((@touchBase * 1.5) / 3);
+    title {
+      display: block;
+      font: @fontBold;
+      font-size: 0.85em;
+      height: ((@touchBase * 1.5) / 3);
+      line-height: ((@touchBase * 1.5) / 3);
+      //padding: ((@touchBase * 1.5) / 3);
+      text-transform: uppercase;
+      text-align: right;
+    }
+  }
+  
+}
